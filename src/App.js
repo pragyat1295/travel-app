@@ -62,6 +62,7 @@ function App() {
   }, []);
 
   // window.localStorage.removeItem('routes');
+  // "homepage": "http://pragyat1295.github.io/travel-app",
 
   return (
     
@@ -69,7 +70,7 @@ function App() {
       <Router>
         <Header/>
         <Routes>
-          <Route path = '/travel-app' element = {(
+          <Route path = '/' element = {(
             <Home routes={routes}
             modifyRoute={modifyRoute}/>
           )}/>

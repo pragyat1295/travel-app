@@ -275,7 +275,7 @@ export default function RouteForm({addRoute}) {
   return (
     <div style={{margin: '10%'}}>
        
-          <Link to= '/travel-app' style={{textDecoration: 'none'}}>
+          <Link to= '/' style={{textDecoration: 'none'}}>
             <span className = 'submit-btn ' >
               <AiFillBackward  /> Back
             </span>
