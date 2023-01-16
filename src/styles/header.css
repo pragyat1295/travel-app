@@ -1,0 +1,101 @@
+.header_container {
+    background-color: #0A90CB;
+    /* #007B8E; */
+    color: white;
+    padding: 2%;
+}
+
+.trigger_button {
+    background-color: #007B8E;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -1px;
+    top: -1px;
+    font-size: 24px;
+    background: #ffffff;
+    /* border-radius: 18px; */
+    border: none;
+  }
+
+  .styled-input {
+    /* width: 100%; */
+    margin: 0 0 3em 0;
+    position: relative;
+}
+
+.styled-input label {
+    color: #999;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+/* .styled-input.wide { 
+    width: 100%;
+    max-width: 100%;
+} */
+
+.styled-input input {
+    padding: 20px 20px 0 0;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    color: #333;
+    border-radius: 4px;
+    border-bottom: 2px solid #cbcbcb;
+}
+
+.styled-input input:focus {
+    outline: 0;
+    border-bottom: 2px solid rgba(0, 123, 142, 1);  
+}
+
+  .popup_layout {
+    padding: 2%;
+  }
+  .button_styling {
+    margin-right: 2%;
+  }
+
+  .cancle_btn {
+    background-color: none;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    /* margin-left: -55%; */
+    height: 40px;
+    width: 90px;
+  }
+
+  .delete_btn {
+    background-color: #007B8E;
+    border-radius: 15px;
+    color: white;
+    margin-left: 5%;
+    height: 40px;
+    width: 90px;
+    border: none;
+  }
+
+  .save_btn {
+    background-color: #007B8E;
+    border-radius: 15px;
+    color: white;
+    margin-left: 5%;
+    height: 40px;
+    /* width: 90px; */
+    border: none;
+  }

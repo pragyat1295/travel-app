@@ -1,0 +1,150 @@
+[
+	{
+		"id": 1,
+        "rout_name": "Kanpur",
+        "direction": "down",
+        "status": "active",
+        "stops": [
+            {
+                "id": 2,
+                "stopName": "Fathepur",
+                "latitude": "25.920074",
+                "longitude": "80.809998"
+
+            },
+            {
+                "id": 3,
+                "stopName": "Allahabad",
+                "latitude": "25.379194",
+                "longitude": "81.877068"
+
+            },
+            {
+                "id": 4,
+                "stopName": "Varanasi",
+                "latitude": "25.321684",
+                "longitude": "82.987289"
+
+            }
+        ],
+        "latitude": "26.492607",
+        "longitude": "80.301811"
+
+	},
+	{
+		"id": 5,
+        "rout_name": "New Delhi",
+        "direction": "up",
+        "status": "active",
+        "stops": [
+            {
+                "id": 6,
+                "stopName": "Noida",
+                "latitude": "28.535517",
+                "longitude": "77.391029"
+
+            },
+            {
+                "id": 7,
+                "stopName": "Aligarh",
+                "latitude": "27.900383",
+                "longitude": "78.072281"
+
+            },
+            {
+                "id": 8,
+                "stopName": "Etwah",
+                "latitude": "26.811712",
+                "longitude": "79.004692"
+
+            },
+            {
+                "id": 9,
+                "stopName": "Kanpur",
+                "latitude": "26.492607",
+                "longitude": "80.301811"
+
+            }
+        ],
+        "latitude": "28.644800",
+        "longitude": "77.216721"
+
+	},
+    {
+		"id": 10,
+        "rout_name": "Pune",
+        "direction": "up",
+        "status": "inactive",
+        "stops": [
+            {
+                "id": 11,
+                "stopName": "Nelamangala",
+                "latitude": "13.089093",
+                "longitude": " 77.410416"
+
+            },
+            {
+                "id": 12,
+                "stopName": "Bangalore",
+                "latitude": "13.107568",
+                "longitude": "77.571198"
+
+            }
+            
+        ],
+        "latitude": "18.516726",
+        "longitude": "73.856255"
+
+	},
+    {
+		"id": 13,
+        "rout_name": "Mumbai",
+        "direction": "down",
+        "status": "active",
+        "stops": [
+            {
+                "id": 14,
+                "stopName": "Andheri East",
+                "latitude": "19.114424",
+                "longitude": "72.867943"
+
+            },
+            {
+                "id": 15,
+                "stopName": "Vashi",
+                "latitude": "19.077065",
+                "longitude": "72.998993"
+
+            },
+            {
+                "id": 16,
+                "stopName": "Hyderabad",
+                "latitude": "17.357674",
+                "longitude": "78.461906"
+
+            }
+        ],
+        "latitude": "19.076090",
+        "longitude": "72.877426"
+
+	},
+    {
+		"id": 17,
+        "rout_name": "Hyderabad",
+        "direction": "down",
+        "status": "active",
+        "stops": [
+            {
+                "id": 18,
+                "stopName": "Pune",
+                "latitude": "18.516726",
+                "longitude": "73.856255"
+
+            }
+            
+        ],
+        "latitude": "17.357674",
+        "longitude": "78.461906"
+
+	}
+]
