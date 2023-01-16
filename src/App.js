@@ -69,7 +69,7 @@ function App() {
       <Router>
         <Header/>
         <Routes>
-          <Route path = '/' element = {(
+          <Route path = '/travel-app' element = {(
             <Home routes={routes}
             modifyRoute={modifyRoute}/>
           )}/>
