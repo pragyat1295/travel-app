@@ -31,7 +31,9 @@ export default function MapView({routes, routesToShow}) {
   });
 
   function ChangeView() {
-    let lat = 0, long = 0, i = 0.0;
+    // let lat = 0, long = 0, i = 0.0;
+    let lat = 28.644800, long = 77.216721, i = 0.0;
+
     let markerBounds = latLngBounds([]);
 
     routes.forEach(element => {
@@ -60,7 +62,10 @@ export default function MapView({routes, routesToShow}) {
   } 
 
   return (
-    <MapContainer center={[77.21672, 28.644800]} zoom={10} scrollWheelZoom={true}>
+    <MapContainer 
+    center={[77.21672, 28.644800]} 
+    // center={[22.220022, 44.644800]} 
+    zoom={10} scrollWheelZoom={true}>
 
       <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -92,7 +97,7 @@ export default function MapView({routes, routesToShow}) {
                     
                     return(
                         <Marker position={polyline[polyline.length - 1]}
-                            icon={(item.stops.indexOf(stop) != item.stops.length - 1 ) ? redIcon : greenIcon}>
+                            icon={(item.stops.indexOf(stop) !== item.stops.length - 1 ) ? redIcon : greenIcon}>
                             <Popup>
                                 {stop.stopName}
                             </Popup>

@@ -16,6 +16,8 @@ function App() {
 
   const [routes, setRoutes] = useState([]);
 
+  // -------------- Way 2----------------
+
   async function loadData() {
     let data = localStorage.getItem("routes");
 
@@ -23,12 +25,52 @@ function App() {
       const request = fetch(API);
       const response = await request;
       data = await response.json();
-
+      
       localStorage.setItem("routes", JSON.stringify(data));
+    
+      
     }
+
+    // else {
+    //   setRoutes(JSON.parse(data));
+    // }
+    
     
     setRoutes(JSON.parse(data));
   }
+
+  // ---------------- Way 1 ----------------
+
+ 
+  // function loadData() {
+  //   let data = localStorage.getItem("routes");
+
+  //   if (data === null) {
+  //     const request = fetch(API);
+  //     // const response = await request;
+  //     // data = await response.json();
+  //     request.then(res => {
+  //       return res.json();
+  //     })
+  //     .then(data => {
+  //       localStorage.setItem("routes", JSON.stringify(data));
+  //       setRoutes(JSON.parse(data));
+  //     })
+  //     // localStorage.setItem("routes", JSON.stringify(data));
+      
+      
+  //   }
+
+  //   else {
+  //     setRoutes(JSON.parse(data));
+  //   }
+    
+  //   // setRoutes(JSON.parse(data));
+  // } 
+  
+
+  // ------------- This function adds the rote from the form to the home page ----------------
+  
 
   const addRoute = (route) => {
     const temp_obj = {
@@ -38,6 +80,11 @@ function App() {
     setRoutes(routes => [...routes, temp_obj]);
     localStorage.setItem("routes", JSON.stringify([...routes, temp_obj]));
   }
+
+  // ===========================================================================================
+
+
+  
 
   const modifyRoute = (id, newRoute) => {
     let updatedRoutes = [];
@@ -56,6 +103,8 @@ function App() {
     setRoutes(updatedRoutes);
     localStorage.setItem("routes", JSON.stringify(updatedRoutes));
   }
+
+
 
   useEffect(() => {
     loadData();
